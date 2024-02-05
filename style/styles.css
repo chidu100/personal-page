@@ -1,2 +1,102 @@
+* {
+    box-sizing: border-box;
+}
 
+/* body */
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+}
 
+.note{
+    text-align: center;
+    background-color: orange;
+    padding: 5px;
+}
+
+/* header*/
+.header {
+    padding: 40px;
+    text-align: center;
+    background: #41b3a3;
+    color: white;
+}
+
+/* styling the nav bar */
+.navbar{
+    display: flex;
+    background-color: #333;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+}
+
+.navbar a:hover{
+    background-color: #85dcb8;
+    color: black;
+}
+ /* about page */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side{
+    flex: 30%;
+    background-color: #85dcb8;
+    padding: 20px;
+}
+
+/* Timeline */
+.timeline {
+    background-color: #41b3a3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 3rem;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 3rem;
+    border-left: 1px solid var(--color-grey-5);
+}
+
+.tl-icon {
+    position: absolute;
+    left: -27px;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tl-icon i {
+    font-size: 1.3rem;
+}
+
+.tl-duration {
+    padding: .2rem .6rem;
+    background-color: #2a2e35;
+    color: #fff;
+    border-radius: 15px;
+    display: inline-block;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.h-man{
+   padding: .1rem 0;
+   text-transform: uppercase;
+   font-size: 1.3rem;
+   font-weight: 600;
+}
